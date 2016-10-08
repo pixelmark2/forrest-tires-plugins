@@ -1,0 +1,153 @@
+
+
+
+
+    .full-carousel-cards h2 {
+        margin: 0;
+        color: white;
+        font-size: 40px;
+    }
+
+    .full-carousel-cards h2 {
+        font-variant: small-caps;
+        font-weight: 900;
+    }
+
+    .full-carousel-cards @media screen and (min-width: 500px) {
+        h2 {
+            font-size: 68px;
+        }
+    }
+
+
+    .full-carousel-cards .inner_overlay {
+        transition: all 1s ease;
+        /*position: absolute;*/
+        height: 100%;
+        width: 100%;
+        display: table;
+        background-color: rgba(0,0,0,.6);
+        
+        z-index: 1000;
+    }
+    
+
+    @media only screen and (min-width: 1200px) {
+        .full-carousel-cards .inner_overlay {
+            /*width: 30%;*/
+        }
+    }
+    .full-carousel-cards .card-item .card-image .inside-title {
+        cursor: pointer;
+    }
+    .full-carousel-cards .inside-title {
+        padding-bottom: 0;
+        text-align: center;
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        color: white;
+        
+        transition: opacity 1s, width 1s, height 1s, background 1s, padding 1s;
+    }
+
+    .full-carousel-cards .inside-title .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /*Mostly applies to the front page cards but also to the blog page too*/
+    .full-carousel-cards #section-6 { 
+        background-color: #e8e8e8; 
+    }
+    .full-carousel-cards .card-image {
+        height: 445px;
+        /*giving the card image a height allows the inner_overlay table to center vertically*/
+        position: relative;
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+
+
+    .full-carousel-cards .card-item {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        vertical-align: top;
+    }
+
+
+    .full-carousel-cards .card-image .rimage {
+        height: 445px;
+    }
+
+    .full-carousel-cards .rimage.background-image {
+        background-position: center;
+        background-size: cover;
+        transition: all 1s ease;
+        /*This rule turns the zoom on hover into a nice transition*/
+    }
+
+    .full-carousel-cards .card-details {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 30px;
+        box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+    }
+
+    .full-carousel-cards .card-details {
+        position: relative;
+        padding: 20px;
+        background-color: #F8F8F8;
+    }
+
+    .full-carousel-cards .card-details {
+        padding: 40px;
+    }
+
+
+    /*.card-list {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }*/
+
+    .full-carousel-cards .card-item .tail {
+        margin-top: auto;
+    }
+
+    .full-carousel-cards .card-item .tail {
+        text-align: right;
+        overflow: auto;
+    }
+
+    .full-carousel-cards .work-label-venture.card-item .tail a {
+        border-color: #14C04D;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .full-carousel-cards .card-item .tail a {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        border-bottom: 2px solid;
+    }
+
+    .home-1-right .full-carousel-cards .inner_overlay {
+        position: absolute;
+    }
+.home-1-right .full-carousel-cards .card-image,
+.home-1-right .full-carousel-cards .card-image .rimage {
+        height: 184.25px;
+}
