@@ -1,0 +1,84 @@
+    .single-card .card-image h2 {
+        font-weight: 100;
+        text-align: center;
+    }
+
+      .single-card h3 {
+        text-align: center;
+      }
+/*    .single-card .card-image:hover > .rimage {
+        transform: scale(1.2);
+    }*/
+
+    .single-card .card-image {
+        height: 245px;
+        /*giving the card image a height allows the inner_overlay table to center vertically*/
+        position: relative;
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+
+
+    .single-card.card-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        vertical-align: top;
+    }
+
+
+    .single-card .card-image .rimage {
+        height: 245px;
+    }
+
+    .rimage.background-image {
+        background-position: center;
+        background-size: cover;
+
+        /*This rule turns the zoom on hover into a nice transition*/
+    }
+
+    .rimage.background-image {
+        transition: all 1.5s ease;
+    }
+
+    .card-details {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        padding: 30px;
+        /*box-shadow: 0 2px 0 rgba(0,0,0,0.06);*/
+    }
+
+    .card-details {
+        position: relative;
+        padding: 20px;
+    }
+
+
+
+
+
+    .single-card.card-item .tail {
+        margin-top: auto;
+    }
+
+    .single-card.card-item .tail {
+        text-align: right;
+        overflow: auto;
+    }
+
+    .work-label-venture.single-card.card-item .tail a {
+        border-color: #14C04D;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .single-card.card-item .tail a {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        border-bottom: 2px solid;
+    }
