@@ -82,3 +82,163 @@
         text-align: left;
         border-bottom: 2px solid;
     }
+
+
+
+
+
+
+
+
+/*ALL ELSE*/
+    .featured-layout-2 h2 {
+        margin: 0;
+        color: white;
+        font-size: 40px;
+    }
+
+    .featured-layout-2 h2 {
+        /*font-variant: small-caps;*/
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .featured-layout-2 @media screen and (min-width: 500px) {
+        h2 {
+            font-size: 68px;
+        }
+    }
+
+
+    .featured-layout-2 .inner_overlay {
+        transition: all 1s ease;
+        /*position: absolute;*/
+        height: 100%;
+        width: 100%;
+        display: table;
+        /*Add a background color if the text is not legible*/
+        /*background-color: rgba(0,0,0,.6);*/
+        
+        z-index: 1000;
+    }
+    
+
+    @media only screen and (min-width: 1200px) {
+        .featured-layout-2 .inner_overlay {
+            /*width: 30%;*/
+        }
+    }
+    .featured-layout-2.card-item .card-image .inside-title {
+        cursor: pointer;
+    }
+    .featured-layout-2 .inside-title {
+        padding-bottom: 0;
+        /*text-align: center;*/
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        color: white;
+        
+        transition: opacity 1s, width 1s, height 1s, background 1s, padding 1s;
+    }
+
+    .featured-layout-2 .inside-title .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /*Mostly applies to the front page cards but also to the blog page too*/
+    .featured-layout-2 #section-6 { 
+        background-color: #e8e8e8; 
+    }
+    .featured-layout-2 .card-image {
+        height: 445px;
+        /*giving the card image a height allows the inner_overlay table to center vertically*/
+        position: relative;
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+
+
+    .featured-layout-2.card-item {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        vertical-align: top;
+    }
+
+
+    .featured-layout-2 .card-image .rimage {
+        height: 445px;
+    }
+
+    .featured-layout-2 .rimage.background-image {
+        background-position: center;
+        background-size: cover;
+        transition: all 1s ease;
+        /*This rule turns the zoom on hover into a nice transition*/
+    }
+
+    .featured-layout-2 .card-details {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 30px;
+        box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+    }
+
+    .featured-layout-2 .card-details {
+        position: relative;
+        padding: 20px;
+        background-color: #F8F8F8;
+    }
+
+    .featured-layout-2 .card-details {
+        padding: 40px;
+    }
+
+
+    /*.card-list {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }*/
+
+    .featured-layout-2.card-item .tail {
+        margin-top: auto;
+    }
+
+    .featured-layout-2.card-item .tail {
+        text-align: right;
+        overflow: auto;
+    }
+
+    .featured-layout-2 .work-label-venture.card-item .tail a {
+        border-color: #14C04D;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .featured-layout-2 .card-item .tail a {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        border-bottom: 2px solid;
+    }
+
+    .home-1-right .featured-layout-2 .inner_overlay {
+        position: absolute;
+    }
+.home-1-right .featured-layout-2 .card-image,
+.home-1-right .featured-layout-2 .card-image .rimage {
+        height: 184.25px;
+}
