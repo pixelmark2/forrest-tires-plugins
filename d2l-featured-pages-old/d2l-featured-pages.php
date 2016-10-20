@@ -17,15 +17,15 @@ function d2l_featured_pages_styles() {
 	wp_enqueue_style( 'd2l-featured-pages-css', plugins_url('d2l-featured-pages/css/d2l-featured-pages.css', dirname(__FILE__)) );
 }
 
-add_action('wp_enqueue_scripts', 'd2l_featured_pages_js');
+// add_action('wp_enqueue_scripts', 'd2l_featured_pages_js');
 
-function d2l_featured_pages_js() {
-	//enqueue JQuery script
-	wp_enqueue_script( 'jquery' );
+// function d2l_featured_pages_js() {
+// 	//enqueue JQuery script
+// 	wp_enqueue_script( 'jquery' );
 	
 
 
-	wp_enqueue_script('d2l-featured-pages-main-js', plugins_url('d2l-featured-pages/js/d2l-featured-pages.js', dirname(__FILE__)), array('jquery'));
+// 	wp_enqueue_script('d2l-featured-pages-main-js', plugins_url('d2l-featured-pages/js/d2l-featured-pages.js', dirname(__FILE__)), array('jquery'));
 
 // 	// The first parameter of wp_enqueue_script and wp_localize_script MUST be the same.
 //   wp_enqueue_script('zc-js', plugins_url('js/main.js', dirname(__FILE__)), array('jquery'));
@@ -33,7 +33,7 @@ function d2l_featured_pages_js() {
 //       'zcajaxurl'     => admin_url( 'admin-ajax.php' ),
 //     )
 //   );
-}
+// }
 
 // // These must go outside of the script enqueue function
 // add_action('wp_ajax_ajax_hello_action','ajax_hello_action');
@@ -41,7 +41,7 @@ function d2l_featured_pages_js() {
 
 
 include("inc/content.php");
-add_shortcode('d2l_fp', 'd2l_create_html');
+add_shortcode('d2l_fp', 'd2l_fp_content');
 
 
 

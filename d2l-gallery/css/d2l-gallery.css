@@ -1,0 +1,21 @@
+.d2l-gallery {
+    overflow: hidden;
+}
+
+.d2l-gallery img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: none !important;
+}
+.d2l-gallery:hover .slick-arrow {
+    opacity: 1;
+}
+
+.gallery-image {
+    padding: 28.8% 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 600px;
+}

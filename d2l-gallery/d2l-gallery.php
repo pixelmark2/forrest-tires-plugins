@@ -1,31 +1,31 @@
 <?php
 /*
-Plugin Name: D2L Featured Pages
+Plugin Name: D2L Gallery
 Plugin URI: https://dust2life.com
-Description: D2L Featured Pages
+Description: D2L Gallery
 Version: 1.0
 Author: Dust2Life
 Author URI: https://dust2life.com
-Text Domain: d2l_featured_pages
+Text Domain: d2l_gallery
 Domain Path: /lang/
 License: GPL2
 */
 
-add_action('wp_enqueue_scripts', 'd2l_featured_pages_styles');
+add_action('wp_enqueue_scripts', 'd2l_gallery_styles');
 
-function d2l_featured_pages_styles() {
-	wp_enqueue_style( 'd2l-featured-pages-css', plugins_url('d2l-featured-pages/css/d2l-featured-pages.css', dirname(__FILE__)) );
+function d2l_gallery_styles() {
+	wp_enqueue_style( 'd2l-gallery-css', plugins_url('d2l-gallery/css/d2l-gallery.css', dirname(__FILE__)) );
 }
 
-add_action('wp_enqueue_scripts', 'd2l_featured_pages_js');
+add_action('wp_enqueue_scripts', 'd2l_gallery_js');
 
-function d2l_featured_pages_js() {
+function d2l_gallery_js() {
 	//enqueue JQuery script
 	wp_enqueue_script( 'jquery' );
 	
 
 
-	wp_enqueue_script('d2l-featured-pages-main-js', plugins_url('d2l-featured-pages/js/d2l-featured-pages.js', dirname(__FILE__)), array('jquery'));
+	wp_enqueue_script('d2l-gallery-main-js', plugins_url('d2l-gallery/js/d2l-gallery.js', dirname(__FILE__)), array('jquery'));
 
 // 	// The first parameter of wp_enqueue_script and wp_localize_script MUST be the same.
 //   wp_enqueue_script('zc-js', plugins_url('js/main.js', dirname(__FILE__)), array('jquery'));
@@ -41,7 +41,7 @@ function d2l_featured_pages_js() {
 
 
 include("inc/content.php");
-add_shortcode('d2l_fp', 'd2l_create_html');
+add_shortcode('d2l_gallery', 'd2l_create_gallery_html');
 
 
 

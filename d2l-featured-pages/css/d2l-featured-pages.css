@@ -1,244 +1,742 @@
-    .single-card .card-image h2 {
-        font-weight: 100;
-        text-align: center;
-    }
 
-      .single-card h3 {
-        text-align: center;
-      }
-/*    .single-card .card-image:hover > .rimage {
-        transform: scale(1.2);
-    }*/
+.slick-dots
+{
+    position: absolute;
+    bottom: -15px;
 
-    .single-card .card-image {
-        height: 245px;
-        /*giving the card image a height allows the inner_overlay table to center vertically*/
-        position: relative;
-        display: block;
-        overflow: hidden;
-        cursor: pointer;
-    }
+    display: block;
 
+    width: 100%;
+    padding: 0;
+    margin: 0;
 
+    list-style: none;
 
-    .single-card.card-item {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        vertical-align: top;
-    }
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
 
+    display: inline-block;
 
-    .single-card .card-image .rimage {
-        height: 245px;
-    }
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
 
-    .rimage.background-image {
-        background-position: center;
-        background-size: cover;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
 
-        /*This rule turns the zoom on hover into a nice transition*/
-    }
+    display: block;
 
-    .rimage.background-image {
-        transition: all 1.5s ease;
-    }
+    width: 20px;
+    height: 20px;
+    padding: 5px;
 
-    .card-details {
-        display: flex;
-        flex: 1 0 auto;
-        flex-direction: column;
-        padding: 30px;
-        /*box-shadow: 0 2px 0 rgba(0,0,0,0.06);*/
-    }
+    cursor: pointer;
 
-    .card-details {
-        position: relative;
-        padding: 20px;
-    }
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 20px;
 
+    position: absolute;
+    top: 0;
+    left: 0;
 
+    width: 20px;
+    height: 20px;
 
+    content: '•';
+    text-align: center;
 
+    opacity: .25;
+    color: black;
 
-    .single-card.card-item .tail {
-        margin-top: auto;
-    }
-
-    .single-card.card-item .tail {
-        text-align: right;
-        overflow: auto;
-    }
-
-    .work-label-venture.single-card.card-item .tail a {
-        border-color: #14C04D;
-        transition: color 0.2s ease-in-out;
-    }
-
-    .single-card.card-item .tail a {
-        display: inline-block;
-        float: left;
-        text-align: left;
-        border-bottom: 2px solid;
-    }
-
-
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
 
 
 
 
 
 
-/*ALL ELSE*/
-    .featured-layout-2 h2 {
-        margin: 0;
-        color: white;
-        font-size: 40px;
-    }
-
-    .featured-layout-2 h2 {
-        /*font-variant: small-caps;*/
-        text-transform: uppercase;
-        font-weight: 900;
-    }
-
-    .featured-layout-2 @media screen and (min-width: 500px) {
-        h2 {
-            font-size: 68px;
-        }
-    }
 
 
-    .featured-layout-2 .inner_overlay {
-        transition: all 1s ease;
-        /*position: absolute;*/
-        height: 100%;
-        width: 100%;
-        display: table;
-        /*Add a background color if the text is not legible*/
-        /*background-color: rgba(0,0,0,.6);*/
-        
-        z-index: 1000;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*THESE STYLES WERE USED ON JAMES DIAMOND'S WEBSITE*/
+/*SLIDER WITH BORDER. IMAGE ON LEFT WITH TEXT ON RIGHT*/
+
+.d2l-layout-4 .single-card.card-item {
+    display: block;
+
+}
+.d2l-layout-4 {
+    border: 10px solid rgb(201,201,201);
+    border-style: double;
+    border-radius: 5px;    
+}
+
+
+.d2l-layout-4 .single-card.card-item .rimage {
+    padding: 230px 0;
     
+}
 
-    @media only screen and (min-width: 1200px) {
-        .featured-layout-2 .inner_overlay {
-            /*width: 30%;*/
-        }
+/*.d2l-layout-4 .single-card.card-item .card-image {
+    position: absolute;
+}*/
+.d2l-layout-4 .card-details
+ {
+  padding:20px;
+  height: 460px;
+
+}
+.d2l-layout-4 .excerpt {
+  font-size: 25px;
+  color: rgb(163,46,74) !important;
+}
+.d2l-layout-4 .card-details a {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*.d2l-layout-4 h3 {
+    color: rgb(163,46,74);
+    font-size: 50px;
+    text-align: left !important;
+    text-transform: uppercase;
+    font-weight: lighter;
+}*/
+
+.d2l-layout-4 h3 {
+    color: rgb(163,46,74);
+    font-size: 70px;
+    text-align: left !important;
+    font-family: "Great Vibes";
+    font-weight: lighter;
+}
+.d2l-layout-4 a {
+    text-decoration: none;
+}
+
+.d2l-layout-4 .single-card.card-item {
+    /*background: linear-gradient(to left, rgba(30,87,153,0) 47%,rgb(163,46,74) 100%);*/
+    /*background-color: rgb(163,46,74)*/
+}
+
+/*Add a border around the text*/
+.d2l-layout-4 .card-details {
+/*    background-color: rgb(163,46,74);
+    border-radius: 20px;*/
+}
+
+.d2l-layout-4 .card-details a .title {
+    text-align: center;
+}
+
+.d2l-layout-4 .rimage.background-image {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 860px) {
+    .home-2 .widget {
+        width: 33.33333%;
     }
-    .featured-layout-2.card-item .card-image .inside-title {
-        cursor: pointer;
-    }
-    .featured-layout-2 .inside-title {
-        padding-bottom: 0;
-        /*text-align: center;*/
-        position: relative;
-        display: table-cell;
-        vertical-align: middle;
-        color: white;
-        
-        transition: opacity 1s, width 1s, height 1s, background 1s, padding 1s;
-    }
-
-    .featured-layout-2 .inside-title .wrap {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    /*Mostly applies to the front page cards but also to the blog page too*/
-    .featured-layout-2 #section-6 { 
-        background-color: #e8e8e8; 
-    }
-    .featured-layout-2 .card-image {
-        height: 445px;
-        /*giving the card image a height allows the inner_overlay table to center vertically*/
-        position: relative;
-        display: block;
-        overflow: hidden;
-        cursor: pointer;
-    }
-
-
-
-    .featured-layout-2.card-item {
-        position: relative;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        vertical-align: top;
-    }
-
-
-    .featured-layout-2 .card-image .rimage {
-        height: 445px;
-    }
-
-    .featured-layout-2 .rimage.background-image {
-        background-position: center;
-        background-size: cover;
-        transition: all 1s ease;
-        /*This rule turns the zoom on hover into a nice transition*/
-    }
-
-    .featured-layout-2 .card-details {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex: 1 0 auto;
-        flex: 1 0 auto;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        padding: 30px;
-        box-shadow: 0 2px 0 rgba(0,0,0,0.06);
-    }
-
-    .featured-layout-2 .card-details {
-        position: relative;
-        padding: 20px;
-        background-color: #F8F8F8;
-    }
-
-    .featured-layout-2 .card-details {
-        padding: 40px;
-    }
-
-
-    /*.card-list {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }*/
-
-    .featured-layout-2.card-item .tail {
-        margin-top: auto;
-    }
-
-    .featured-layout-2.card-item .tail {
-        text-align: right;
-        overflow: auto;
-    }
-
-    .featured-layout-2 .work-label-venture.card-item .tail a {
-        border-color: #14C04D;
-        transition: color 0.2s ease-in-out;
-    }
-
-    .featured-layout-2 .card-item .tail a {
-        display: inline-block;
+    .home-2 .article,
+    .home-2 .widget-wrap,
+    .home-2 .widget {
         float: left;
-        text-align: left;
-        border-bottom: 2px solid;
     }
 
-    .home-1-right .featured-layout-2 .inner_overlay {
+    .d2l-layout-4 .single-card.card-item .card-image {
+        width: 50%;
+        float: left;
+        position: relative !important;
+    }
+
+    .d2l-layout-4 .single-card.card-item .card-details {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+
+.d2l-layout-4:hover .slick-arrow {
+    opacity: 1;
+}
+
+.d2l-layout-4 .slick-arrow:hover {
+    color: rgba(0,0,0,.5); !important;
+}
+.d2l-layout-4 .slick-arrow {
+position: absolute;
+font-size: 70px;
+  z-index: 10;
+  color: rgba(0,0,0,.3);
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+.d2l-layout-4 .slick-arrow-left {
+    top: 43%;
+    /*left: -80px;*/
+}
+.d2l-layout-4 .slick-arrow-right {
+    top: 43%;
+    right: -20px;
+    right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PICTURE ABOVE TITLE WIDGET (TRIPLE WIDGET), USED ON FORRESTTIRE FRONT PAGE*/
+.d2l-layout-6 .single-card .card-image h2 {
+    font-weight: 100;
+    text-align: center;
+}
+
+  .d2l-layout-6 .single-card h3 {
+    text-align: center;
+  }
+/*    .single-card .card-image:hover > .rimage {
+    transform: scale(1.2);
+}*/
+
+.d2l-layout-6 .single-card .card-image {
+    /*height: 245px;*/
+    /*giving the card image a height allows the inner_overlay table to center vertically*/
+    position: relative;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+.d2l-layout-6 .single-card.card-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    vertical-align: top;
+}
+
+
+.d2l-layout-6 .single-card .card-image .rimage {
+    padding: 33% 0;    
+}
+
+.d2l-layout-6 .rimage.background-image {
+    background-position: center;
+    background-size: cover;
+
+    /*This rule turns the zoom on hover into a nice transition*/
+}
+
+.d2l-layout-6 .rimage.background-image {
+    transition: all 1.5s ease;
+}
+
+.d2l-layout-6 .card-details {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    padding: 30px;
+    /*box-shadow: 0 2px 0 rgba(0,0,0,0.06);*/
+}
+
+.d2l-layout-6 .card-details {
+    position: relative;
+    padding: 20px;
+}
+
+
+
+
+
+.d2l-layout-6 .single-card.card-item .tail {
+    margin-top: auto;
+}
+
+.d2l-layout-6 .single-card.card-item .tail {
+    text-align: right;
+    overflow: auto;
+}
+
+.d2l-layout-6 .work-label-venture.single-card.card-item .tail a {
+    border-color: #14C04D;
+    transition: color 0.2s ease-in-out;
+}
+
+.d2l-layout-6 .single-card.card-item .tail a {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    border-bottom: 2px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*DOUBLE STACKED POSTS IN TOP RIGHT ON FORRESTTIRE FRONT PAGE*/
+.d2l-layout-7 h2 {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+}
+
+.d2l-layout-7 h2 {
+    /*font-variant: small-caps;*/
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.d2l-layout-7 @media screen and (min-width: 500px) {
+    h2 {
+        font-size: 68px;
+    }
+}
+
+
+.d2l-layout-7 .inner_overlay {
+    transition: all 1s ease;
+    /*position: absolute;*/
+    height: 100%;
+    width: 100%;
+    display: table;
+    /*Add a background color if the text is not legible*/
+    /*background-color: rgba(0,0,0,.6);*/
+    
+    z-index: 1000;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .d2l-layout-7 .inner_overlay {
+        /*width: 30%;*/
+    }
+}
+.d2l-layout-7 .card-item .card-image .inside-title {
+    cursor: pointer;
+}
+.d2l-layout-7 .inside-title {
+    padding-bottom: 0;
+    /*text-align: center;*/
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    
+    transition: opacity 1s, width 1s, height 1s, background 1s, padding 1s;
+}
+
+.d2l-layout-7 .inside-title .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*Mostly applies to the front page cards but also to the blog page too*/
+.d2l-layout-7 #section-6 { 
+    background-color: #e8e8e8; 
+}
+.d2l-layout-7 .card-image {
+    /*height: 445px;*/
+    /*giving the card image a height allows the inner_overlay table to center vertically*/
+    position: relative;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+.d2l-layout-7 .card-item {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+
+.d2l-layout-7 .card-image .rimage {
+    /*height: 445px;*/
+}
+
+.d2l-layout-7 .rimage.background-image {
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease;
+    /*This rule turns the zoom on hover into a nice transition*/
+}
+
+.d2l-layout-7 .card-details {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+}
+
+.d2l-layout-7 .card-details {
+    position: relative;
+    padding: 20px;
+    background-color: #F8F8F8;
+}
+
+.d2l-layout-7 .card-details {
+    padding: 40px;
+}
+
+
+/*.card-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}*/
+
+.d2l-layout-7 .card-item .tail {
+    margin-top: auto;
+}
+
+.d2l-layout-7 .card-item .tail {
+    text-align: right;
+    overflow: auto;
+}
+
+.d2l-layout-7 .work-label-venture.card-item .tail a {
+    border-color: #14C04D;
+    transition: color 0.2s ease-in-out;
+}
+
+.d2l-layout-7 .card-item .tail a {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    border-bottom: 2px solid;
+}
+
+.home-1-right .d2l-layout-7 .inner_overlay {
+    position: absolute;
+}
+.home-1-right .d2l-layout-7 .card-image,
+.home-1-right .d2l-layout-7 .card-image .rimage {
+        /*height: 184.25px;*/
+}
+    .d2l-layout-7 .rimage.background-image {
+        padding: 19.75% 0;
+    }
+@media only screen and (min-width: 1023px) {
+    .d2l-layout-7 .rimage.background-image {
+        padding: 26.75% 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TESTIMONIAL SECTION ON FORRESTTIRE'S FRONT PAGE*/
+.d2l-layout-8 {
+    background-color: #333;
+    padding: 20px 0 11px 0;
+}
+.d2l-layout-8 .single-card.card-item {
+    display: inline-block;
+}
+
+
+
+.d2l-layout-8 .single-card.card-item .card-details {
+    height: 155px;
+        padding-left: 20px;
+    padding-right: 20px;
+}
+.d2l-layout-8 .single-card.card-item .card-image,
+.d2l-layout-8 .single-card.card-item .rimage {
+    height: 155px;
+    width: 155px;
+
+    border-radius: 100px;
+    
+}
+.d2l-layout-8 .single-card.card-item .rimage {
+  border: 4px solid rgb(205,18,24);  
+}
+
+.d2l-layout-8 .single-card.card-item .card-image {
+    position: absolute;
+}
+
+
+.d2l-layout-8 h3 {
+    color: white;
+    text-align: right;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+.d2l-layout-8 a {
+    text-decoration: none;
+    position: relative;
+}
+
+.d2l-layout-8 .excerpt {
+    color: white;
+    font-size: 16px;
+    line-height: 1.3;
+    font-style: italic;
+}
+.home-3 .wrap {
+    max-width: 10000px;
+}
+.d2l-layout-8 h3 {
+
+}
+
+@media only screen and (min-width: 860px) {
+    .home-2 .widget {
+        width: 33.33333%;
+    }
+    .home-2 .article,
+    .home-2 .widget-wrap,
+    .home-2 .widget {
+        float: left;
+    }
+
+    .d2l-layout-8 .single-card.card-item .card-image {
+        width: auto;
+        float: left;
+        position: relative !important;
+    }
+
+    .d2l-layout-8 .single-card.card-item .card-details {
+        width: auto;
+        float: left;
+        max-width: 800px;
+    text-align: left;
+    padding-left: 20px;
+    }
+
+}
+
+.social-bar .wrap {
+    max-width: none;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.register-bar .single-card.card-item {
+    display: block;
+}
+
+
+
+.register-bar .single-card.card-item .card-details {
+    height: 170px;
+}
+.register-bar .single-card.card-item .card-image,
+.register-bar .single-card.card-item .rimage {
+    height: 170px;
+    
+}
+
+
+.register-bar .single-card.card-item .rimage {
+    background-size: cover;
+    background-position: center;
+}
+
+.register-bar .card-details a {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+
+.register-bar h3 {
+    color: white;
+    font-size: 40px;
+    text-align: left !important;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.register-bar a {
+    text-decoration: none;
+}
+
+
+.register-bar .card-details {
+    background-color: rgb(216,9,9);
+}
+
+.register-bar .card-details a .title {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 860px) {
+    .register-bar .single-card.card-item .card-image {
+        width: 70%;
+        float: right;
+        position: relative !important;
+    }
+
+    .register-bar .single-card.card-item .card-details {
+        width: 30%;
+        float: left;
+    }
+
+    .register-bar .card-details {
+        background-color: rgb(216,9,9) !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .register-bar h3 {
+        font-size: 50px;    
+    }
+    .register-bar .single-card.card-item .card-image {
         position: absolute;
     }
-.home-1-right .featured-layout-2 .card-image,
-.home-1-right .featured-layout-2 .card-image .rimage {
-        height: 184.25px;
 }
